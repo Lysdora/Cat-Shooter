@@ -1,0 +1,15 @@
+AnimatedSprite2D
+AudioStreamPlayer
+Label
+Button
+CenterContainer
+Panel
+BoxContainer
+Sprite2D
+CanvasLayer
+AnimationPlayer
+Node2D
+Timer
+Marker2D
+VisibleOnScreenNotifier2D
+CollisionShape2D

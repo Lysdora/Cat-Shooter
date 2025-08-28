@@ -1,0 +1,26 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1756389829
+1-Blue_320x180.png::CompressedTexture2D/CompressedTexture2D::365456204089961656::1756357064::1756357064::1::::<><><>0<>0<>b673e4e870e604aef2a8b6684f4b2651<>res://.godot/imported/1-Blue_320x180.png-62c52b33bf32a1775913b9f93f1b6c59.ctex::
+bullet.gd::GDScript/GDScript::5216881286100809699::1756356752::0::1::::<>RigidBody2D<><>0<>0<><>::
+bullet.png::CompressedTexture2D/CompressedTexture2D::9160327301556688241::1756355953::1756389824::1::::<><><>0<>0<>b65e3e6bca7dc0b3702002160a67c3ae<>res://.godot/imported/bullet.png-ff1424653e10246c11e3724e402c519e.ctex::
+bullet.tscn::PackedScene/PackedScene::2675361475368240034::1756389823::0::1::::<><><>0<>0<><>::uid://d3rlitxbbwa7r::::res://bullet.png<>uid://cgldjjdyy6gel::::res://bullet.gd
+cat1.png::CompressedTexture2D/CompressedTexture2D::2475631750270624771::1756355720::1756389816::1::::<><><>0<>0<>daee9f0cc0a1746a76b8e5c165241985<>res://.godot/imported/cat1.png-3eef0b9345071f1310976e1358de7280.ctex::
+cat2.png::CompressedTexture2D::3745040228220809665::1756356534::1756389829::1::::<><><>0<>0<>1c907afc3310e67d0d2a039e9237b61d<>res://.godot/imported/cat2.png-a7a4c1aca067ea26ddb33d31a088c173.ctex::
+cat.gd::GDScript/GDScript::356486512546114533::1756389491::0::1::::<>Area2D<><>0<>0<><>::
+cat.tscn::PackedScene/PackedScene::3557308746204198787::1756389815::0::1::::<><><>0<>0<><>::uid://fcxjstyfix3b::::res://cat.gd<>uid://bbjhj78hk7vk2::::res://cat1.png<>uid://bwk8ts4vnih6l::::res://hit_sound.wav<>uid://cq1nnwqm5pd8u::::res://explosion_sound.wav
+ChatGPT Image 28 août 2025, 06_55_04.png::CompressedTexture2D/CompressedTexture2D::8590765031883973650::1756356911::1756356912::1::::<><><>0<>0<>81329e4be4732347de05fab69e50eef7<>res://.godot/imported/ChatGPT Image 28 août 2025, 06_55_04.png-1736f67586e6e5fc3bb375b9b845a9fd.ctex::
+chat_spawner.gd::GDScript/GDScript::3201756134238416046::1756357938::0::1::::<>Node2D<><>0<>0<><>::
+chat_spawner.tscn::PackedScene/PackedScene::894051342693933912::1756389491::0::1::::<><><>0<>0<><>::uid://blu7pq30dqlyc::::res://chat_spawner.gd
+explosion.png::CompressedTexture2D/CompressedTexture2D::6550731033452536259::1756366219::1756366219::1::::<><><>0<>0<>bf601c255c29b713bcbadac743d7807e<>res://.godot/imported/explosion.png-730076d88b39dbfd5c22ad71f1135b01.ctex::
+explosion_sound.wav::AudioStreamWAV/AudioStreamWAV::5950350404243485274::1756366208::1756366208::1::::<><><>0<>0<>c40c792b1e6a9d433f9f36d2347f6917<>res://.godot/imported/explosion_sound.wav-e1fcaa30f4ae490cfb5212bd8e0e7724.sample::
+game.gd::GDScript/GDScript::5854261278827619680::1756359707::0::1::::<>Node<><>0<>0<><>::
+hit_sound.wav::AudioStreamWAV/AudioStreamWAV::3953257603307368117::1756366201::1756366201::1::::<><><>0<>0<>9f2362321d54ee303b0d0b0979b0b714<>res://.godot/imported/hit_sound.wav-159a7f740e68b4648a3d5dd90220edcb.sample::
+icon.svg::CompressedTexture2D/CompressedTexture2D::1195232451113639398::1756354806::1756354813::1::::<><><>0<>0<>effc3418d9973c918b492e98bb20c87a<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+laser_sound.wav::AudioStreamWAV/AudioStreamWAV::7360379130016389062::1756366204::1756366205::1::::<><><>0<>0<>59c69ee51cce891db55fab4166556db3<>res://.godot/imported/laser_sound.wav-f52146247adf9675119c75f4a567222d.sample::
+player.gd::GDScript/GDScript::6350325209775313242::1756366372::0::1::::<>Area2D<><>0<>0<><>::
+Player.png::CompressedTexture2D/CompressedTexture2D::6279679056358852182::1756355135::1756389809::1::::<><><>0<>0<>8a2bff31c95fe685e333b49e6586de72<>res://.godot/imported/Player.png-3b381e068d1d74cc2895fb9be41402b0.ctex::
+player.tscn::PackedScene/PackedScene::5359337567651814395::1756389808::0::1::::<><><>0<>0<><>::uid://cvp6nqpnwu5dy::::res://Player.png<>uid://cwqe6tii40ote::::res://player.gd<>uid://dc4omsprcgqkc::::res://laser_sound.wav
+slow-travel.wav::AudioStreamWAV/AudioStreamWAV::2925688997227450623::1756364091::1756364137::1::::<><><>0<>0<>edefcd503b6e86e4a76d9cabf2a8c1c1<>res://.godot/imported/slow-travel.wav-892296fa006b3334f3a585077d4dcfa6.sample::
+test.tscn::PackedScene/PackedScene::2323622047613913644::1756389768::0::1::::<><><>0<>0<><>::
+world.gd::GDScript/GDScript::5383471805495376942::1756365887::0::1::::<>Node2D<><>0<>0<><>::
+world.tscn::PackedScene/PackedScene::3312377789160082748::1756389815::0::1::::<><><>0<>0<><>::uid://cix182gfsgdm1::::res://world.gd<>uid://cimdrh1r23dfv::::res://player.tscn<>uid://m0c5ou0slht5::::res://chat_spawner.tscn<>uid://fhbal5lu3mai::::res://1-Blue_320x180.png<>uid://bbjhj78hk7vk2::::res://cat1.png<>uid://cvp6nqpnwu5dy::::res://Player.png<>uid://bhxhw1545njdn::::res://slow-travel.wav
