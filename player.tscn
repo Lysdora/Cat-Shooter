@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://cimdrh1r23dfv"]
+
+[ext_resource type="Texture2D" uid="uid://cvp6nqpnwu5dy" path="res://Player.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://cwqe6tii40ote" path="res://player.gd" id="1_onrkg"]
+[ext_resource type="AudioStream" uid="uid://dc4omsprcgqkc" path="res://laser_sound.wav" id="3_i3pqv"]
+
+[node name="Player" type="Area2D"]
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.03, 0.03)
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PackedVector2Array(-1, -11, -4, -8, -4, -5, -4, -2, -8, -2, -9, 1, -9, 7, -8, 9, -7, 9, -6, 8, -6, 6, -5, 5, -3, 5, -3, 7, -1, 9, 1, 9, 3, 7, 3, 5, 5, 5, 7, 9, 8, 9, 9, 7, 9, 0, 6, -2, 5, -1, 4, -2, 4, -5, 4, -8)
+
+[node name="ShootPoint" type="Marker2D" parent="."]
+position = Vector2(0, -10)
+
+[node name="shoot" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_i3pqv")
+volume_db = -9.763
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

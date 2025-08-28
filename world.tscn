@@ -1,0 +1,138 @@
+[gd_scene load_steps=9 format=3 uid="uid://bngsm4ip005lw"]
+
+[ext_resource type="Script" uid="uid://cix182gfsgdm1" path="res://world.gd" id="1_036b0"]
+[ext_resource type="PackedScene" uid="uid://cimdrh1r23dfv" path="res://player.tscn" id="1_f3sb7"]
+[ext_resource type="PackedScene" uid="uid://m0c5ou0slht5" path="res://chat_spawner.tscn" id="3_aqk2v"]
+[ext_resource type="Texture2D" uid="uid://fhbal5lu3mai" path="res://1-Blue_320x180.png" id="3_tlwt5"]
+[ext_resource type="Texture2D" uid="uid://bbjhj78hk7vk2" path="res://cat1.png" id="4_aqk2v"]
+[ext_resource type="Texture2D" uid="uid://cvp6nqpnwu5dy" path="res://Player.png" id="6_dwbse"]
+[ext_resource type="AudioStream" uid="uid://bhxhw1545njdn" path="res://slow-travel.wav" id="7_pkg7o"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_pkg7o"]
+font_size = 25
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_036b0")
+
+[node name="1-blue320x180" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(157, 91)
+scale = Vector2(1.025, 1.09444)
+texture = ExtResource("3_tlwt5")
+
+[node name="Player" parent="." instance=ExtResource("1_f3sb7")]
+position = Vector2(169, 160)
+
+[node name="ChatSpawner" parent="." instance=ExtResource("3_aqk2v")]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Score" type="Panel" parent="UI"]
+offset_left = 112.0
+offset_top = 4.0
+offset_right = 184.0
+offset_bottom = 29.0
+
+[node name="Sprite2D" type="Sprite2D" parent="UI/Score"]
+position = Vector2(26.5, 11)
+scale = Vector2(0.0146484, 0.0146484)
+texture = ExtResource("4_aqk2v")
+
+[node name="Label" type="Label" parent="UI/Score"]
+layout_mode = 0
+offset_left = 33.5
+offset_right = 73.5
+offset_bottom = 23.0
+text = "0"
+
+[node name="Vie" type="Panel" parent="UI"]
+offset_left = 3.0
+offset_top = 4.0
+offset_right = 75.0
+offset_bottom = 29.0
+
+[node name="Heart1" type="Sprite2D" parent="UI/Vie"]
+position = Vector2(16.5, 11.5)
+scale = Vector2(0.0146484, 0.0146484)
+texture = ExtResource("6_dwbse")
+
+[node name="Heart2" type="Sprite2D" parent="UI/Vie"]
+position = Vector2(36.5, 12)
+scale = Vector2(0.0146484, 0.0146484)
+texture = ExtResource("6_dwbse")
+
+[node name="Heart3" type="Sprite2D" parent="UI/Vie"]
+position = Vector2(55.5, 11.5)
+scale = Vector2(0.0146484, 0.0146484)
+texture = ExtResource("6_dwbse")
+
+[node name="GameOver" type="Panel" parent="UI"]
+process_mode = 3
+visible = false
+offset_right = 320.0
+offset_bottom = 180.0
+
+[node name="RetryBTN" type="Button" parent="UI/GameOver"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -42.0
+offset_top = 2.0
+offset_right = 31.0
+offset_bottom = 25.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="UI/GameOver/RetryBTN"]
+layout_mode = 0
+offset_right = 73.0
+offset_bottom = 23.0
+text = "RETRY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuitBTN" type="Button" parent="UI/GameOver"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -42.0
+offset_top = 41.0
+offset_right = 31.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="UI/GameOver/QuitBTN"]
+layout_mode = 0
+offset_right = 73.0
+offset_bottom = 23.0
+text = "QUIT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label" type="Label" parent="UI/GameOver"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -46.0
+offset_top = 40.0
+offset_right = 46.0
+offset_bottom = 63.0
+grow_horizontal = 2
+text = "GAME OVER"
+label_settings = SubResource("LabelSettings_pkg7o")
+
+[node name="MusicBG" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_pkg7o")
+volume_db = -10.612
+autoplay = true
+
+[connection signal="pressed" from="UI/GameOver/RetryBTN" to="." method="_on_retry_btn_pressed"]
+[connection signal="pressed" from="UI/GameOver/QuitBTN" to="." method="_on_quit_btn_pressed"]
